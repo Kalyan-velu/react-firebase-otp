@@ -7,6 +7,7 @@ const Home=()=>{
     const {logOut,user}=useUserAuth()
 
     const navigate=useNavigate()
+    console.log(user)
 
     const handleLogOut = async ()=>{
         try {
@@ -19,17 +20,15 @@ const Home=()=>{
 
 
     return(
-     <>
         <div className="home-container">
-            Hello Welcome <br/>
-            {user &&
+            Hello Welcome 
+            <strong>{user &&
                 // @ts-ignore
-                user.email}
+                user.phoneNumber}</strong>
+            <div>
+             <button type="button" className="btn btn-warning" onClick={handleLogOut}>Logout</button>
+            </div>
         </div>
-         <div>
-             <button onClick={handleLogOut}>Logout</button>
-         </div>
-     </>
  )
 }
 

@@ -51,10 +51,13 @@ const PhoneSignUp = () => {
                 <Form onSubmit={getOtp} style={{ display: !flag ? "block" : "none" }}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <input
+                            type="tel"
+                            className="form-control"
                             value={number}
                             onChange={(e)=>setNumber(e.target.value)}
                             placeholder="Enter Phone Number"
                         />
+                        <small id="emailHelp" className="form-text text-muted">Enter Phone Number with Country Code</small>
                         <div id="recaptcha-container"></div>
                     </Form.Group>
                     <div className="button-right">
