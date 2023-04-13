@@ -1,5 +1,5 @@
-# [OTP authentication using Firebase Authentication](https://resume-builder-kamh.onrender.com)
-[View Live Site]()
+# [OTP authentication using Firebase Authentication](https://send-otp.onrender.com)
+[View Live Site](https://send-otp.onrender.com)
 
 This is a sample site for testing firebase phone number authentication in React.
 It is built using [React.js](https://react.dev/), [React Bootstrap(Bootstrap)](https://getbootstrap.com/docs/5.3/getting-started/introduction/),
